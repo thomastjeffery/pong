@@ -11,7 +11,7 @@ configure_file (
 include_directories("${PROJECT_BINARY_DIR}")
 
 set(EXECUTABLE_NAME "Pong")
-add_executable (${EXECUTABLE_NAME} game.cc pong.cc)
+add_executable (${EXECUTABLE_NAME} ball.cc paddle.cc game.cc pong.cc)
 
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake_modules" ${CMAKE_MODULE_PATH})
 find_package(SFML 2 REQUIRED system window graphics)

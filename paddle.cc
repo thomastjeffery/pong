@@ -6,7 +6,7 @@ Paddle::Paddle()
 	setPosition(sf::Vector2f(10.0f, 10.0f));
 }
 
-Paddle::Paddle(sf::Vector2f position)
+Paddle::Paddle(const sf::Vector2f &position)
 : sf::RectangleShape(sf::Vector2f(10.0f, 100.0f))
 {
 	setPosition(position);

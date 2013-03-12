@@ -8,7 +8,7 @@ class Paddle : public sf::RectangleShape
 {
 public:
 	Paddle();
-	Paddle(sf::Vector2f position);
+	Paddle(const sf::Vector2f &position);
 	virtual ~Paddle();
 
 	void moveUp();

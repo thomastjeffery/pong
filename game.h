@@ -2,7 +2,9 @@
 #define GAME_H
 
 #include <SFML/Graphics.hpp>
-#include <list>
+//#include <list>
+#include "paddle.h"
+#include "ball.h"
 #include "PongConfig.h"
 
 class Game : public sf::RenderWindow
@@ -12,14 +14,18 @@ public:
 	virtual ~Game();
 
 	void handle_events();
+	void handle_collisions();
 	void step();
 	void draw_objects();
 	void calc_time();
 
 private:
-	std::list<sf::RectangleShape> objects;
-	sf::Clock clock;
-	float elapsedTime;
+	//std::list<sf::RectangleShape> objects;
+	Paddle *m_player1;
+	Paddle *m_player2;
+	Ball *m_ball;
+	sf::Clock m_clock;
+	float m_elapsedTime;
 };
 
 #endif
