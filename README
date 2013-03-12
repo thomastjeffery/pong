@@ -1,0 +1,7 @@
+A pong clone in C++ using SFML 2.
+
+So far with better physics.
+
+To build, use cmake. You will need SFML 2 installed.
+
+Enjoy. ;P
