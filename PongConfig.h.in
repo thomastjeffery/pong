@@ -1,0 +1,2 @@
+#define Foobar_VERSION_MAJOR @Foobar_VERSION_MAJOR@
+#define Foobar_VERSION_MINOR @Foobar_VERSION_MINOR@
