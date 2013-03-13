@@ -1,5 +1,4 @@
 #include "game.h"
-#include "PongConfig.h"
 
 int main()
 {

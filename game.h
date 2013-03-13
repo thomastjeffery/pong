@@ -5,7 +5,6 @@
 //#include <list>
 #include "paddle.h"
 #include "ball.h"
-#include "PongConfig.h"
 
 class Game : public sf::RenderWindow
 {
